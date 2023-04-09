@@ -1,7 +1,7 @@
 const Post = require("../../models/post.model");
 
 const getAllPosts = async (req, res) => {
-  let allPosts = await Post.find();
+  let allPosts = await Post.find().populate("userId");
   try {
     return res.status(200).send({ length: allPosts.length, allPosts });
   } catch (error) {
