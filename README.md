@@ -45,9 +45,9 @@ It is an social media website in which user can create,like,unlike,delete and ed
 
 ## Run backend locally
 
--clone the repository by following command :- git clone https://github.com/snikhil2001/adobe-assignment.git
--npm install
--npm run dev
+- clone the repository by following command :- git clone https://github.com/snikhil2001/adobe-assignment.git
+- npm install
+- npm run dev
 
 ## Run test cases
 
