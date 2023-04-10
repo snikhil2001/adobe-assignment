@@ -13,7 +13,7 @@ const AllRoutes = () => {
       <Route path="/createuser" element={<CreateUser />} />
       <Route path="/createpost" element={<CreatePost />} />
       <Route path="/users" element={<Users />} />
-      <Route path="/" element={<Posts />} exact />
+      <Route path="*" element={<Posts />} />
       <Route path="/user-analytics" element={<UserAnalytics />} />
       <Route path="/post-analytics" element={<PostAnalytics />} />
     </Routes>

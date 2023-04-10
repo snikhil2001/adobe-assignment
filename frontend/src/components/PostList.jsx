@@ -158,10 +158,10 @@ const PostList = () => {
                 w="13%"
                 margin="auto"
               >
-                {el.userId.name[0]}
+                {el.userId?.name[0]}
               </Text>
               <Text fontSize={"18px"} pt="10px" fontWeight={"bold"}>
-                {el.userId.name}
+                {el.userId?.name}
               </Text>
               <Text fontSize={"18px"} pt="10px" fontWeight={"bold"}>
                 {el.content}
