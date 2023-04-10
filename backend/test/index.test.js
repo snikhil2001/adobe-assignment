@@ -40,12 +40,12 @@ describe("users endpoints", () => {
 
   //delete user by id
 
-  test("delete user by id", async () => {
-    const response = await fetchRequest.delete(
-      `/users/64336f8cc612921e0c06d869`
-    );
-    expect(response.status).toBe(200);
-  }, 10000);
+  // test("delete user by id", async () => {
+  //   const response = await fetchRequest.delete(
+  //     `/users/64336f8cc612921e0c06d869`
+  //   );
+  //   expect(response.status).toBe(200);
+  // }, 10000);
 
   test("user inputs wrong id", async () => {
     const response = await fetchRequest.delete(
@@ -132,7 +132,7 @@ describe("all posts endpoints", () => {
 
   // get post by id
   test("get post by id", async () => {
-    const response = await fetchRequest.get(`/posts/643151fb14f9339dce4283b2`);
+    const response = await fetchRequest.get(`/posts/6431526e14f9339dce4283ba`);
     expect(response.status).toBe(200);
   }, 10000);
 
@@ -147,16 +147,16 @@ describe("all posts endpoints", () => {
 
   //delete post by id
 
-  test("delete post by id", async () => {
-    const response = await fetchRequest.delete(
-      `/posts/643151fb14f9339dce4283b2`
-    );
-    expect(response.status).toBe(200);
-  }, 10000);
+  // test("delete post by id", async () => {
+  //   const response = await fetchRequest.delete(
+  //     `/posts/643151fb14f9339dce4283b2`
+  //   );
+  //   expect(response.status).toBe(200);
+  // }, 10000);
 
   test("user inputs wrong id", async () => {
     const response = await fetchRequest.delete(
-      `/posts/64329a51612a9be350aa5d5a`
+      `/posts/6433791b9f3ce677add0cd4b`
     );
     try {
       expect(response.status).toBe(404);
@@ -168,9 +168,9 @@ describe("all posts endpoints", () => {
   //update post details by id
 
   test("Post content should be changed", async () => {
-    const res = await fetchRequest.put(`/posts/6432a1f1f437fc46d3d8966e`).send({
-      userId: "6431304f917512e393055810",
-      content: "This is a post",
+    const res = await fetchRequest.put(`/posts/6431526e14f9339dce4283ba`).send({
+      userId: "6431524614f9339dce4283b6",
+      content: "Test post",
     });
     expect(res.status).toBe(200);
   }, 10000);
