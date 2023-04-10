@@ -14,15 +14,15 @@ app.use("/posts", postRouter);
 app.use("/analytics", analyticsRouter);
 
 app.get("/", (req, res) => {
-  return res.send("Hello backend");
+  return res.status(200).send("Hello backend");
 });
 
 app.listen(8080, async () => {
   try {
     await connect();
-    console.log("mongodb connection established");
-    console.log("listening on http://localhost:8080");
   } catch (error) {
     console.log(error.message);
   }
 });
+
+module.exports = app;

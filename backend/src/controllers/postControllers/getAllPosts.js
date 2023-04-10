@@ -5,7 +5,7 @@ const getAllPosts = async (req, res) => {
   try {
     return res.status(200).send({ length: allPosts.length, allPosts });
   } catch (error) {
-    return res.status(400).send({ message: error.message });
+    return res.status(404).send({ message: error.message });
   }
 };
 

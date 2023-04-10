@@ -14,7 +14,6 @@ const updateUserById = async (req, res) => {
       {
         name,
         email: user.email,
-        password: user.password,
         bio,
       },
       { new: true }

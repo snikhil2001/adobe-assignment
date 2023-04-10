@@ -8,7 +8,7 @@ const topLikedPosts = async (req, res) => {
   try {
     return res.status(200).send({ LikedPosts });
   } catch (error) {
-    return res.status(500).send({ message: error.message });
+    return res.status(404).send({ message: error.message });
   }
 };
 

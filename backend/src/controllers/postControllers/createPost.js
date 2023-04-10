@@ -5,6 +5,9 @@ const createPost = async (req, res) => {
   const { userId, content } = req.body;
   let newPost = await Post.create({ userId, content });
   try {
+    if (!userId) {
+      return res.status(403).send({ message: "Provide userId" });
+    }
     return res.status(200).send({ message: "Post created successfully" });
   } catch (error) {
     return res.status(500).send({ message: error.message });

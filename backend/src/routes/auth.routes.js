@@ -8,7 +8,7 @@ const app = express.Router();
 
 app.post("/", userSignup);
 
-app.post("/:id", getUserById);
+app.get("/:id", getUserById);
 
 app.put("/:id", updateUserById);
 

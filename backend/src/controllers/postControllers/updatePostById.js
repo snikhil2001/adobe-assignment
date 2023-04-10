@@ -4,6 +4,9 @@ const updatePostById = async (req, res) => {
   let post = await Post.findById(req.params.id);
   let { content, userId } = req.body;
   try {
+    if (!post) {
+      return res.status(404).send({ message: "Post not found" });
+    }
     if (!content) {
       content = post.content;
     }
