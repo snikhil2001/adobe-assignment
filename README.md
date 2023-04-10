@@ -28,36 +28,12 @@ It is an social media website in which user can create,like,unlike,delete and ed
 
 [https://adode.vercel.app/]
 
-## Landing Page
+## Set up and run project locally
 
-![Landing Image 1](Shopahoilc-App/src/Images/landing1.jpg)
+- clone the repository by following command :- git clonehttps://github.com/snikhil2001/adobe-assignment.git
+- npm install
+- npm start
 
-![Landing Image 2](Shopahoilc-App/src/Images/landing2.jpg)
+## Pics of UI
 
-![Landing Image 3](Shopahoilc-App/src/Images/landing3.jpg)
-
-## Product Pages
-
-![New Page](Shopahoilc-App/src/Images/new.jpg)
-
-![Makeup Page](Shopahoilc-App/src/Images/makeup.jpg)
-
-## Single Product Page
-
-![Single Product Page](Shopahoilc-App/src/Images/single.jpg)
-
-## Cart Page
-
-![Cart Page](Shopahoilc-App/src/Images/cart.jpg)
-
-## Admin Dashboard Page
-
-![admin dashboard](Shopahoilc-App/src/Images/admindash.jpg)
-
-## Update form
-
-![update form](Shopahoilc-App/src/Images/update.jpg)
-
-## Add new Product Page
-
-![add new product](Shopahoilc-App/src/Images/addnew.jpg)
+![Posts](frontend/src/Images/postpage.jpg)
