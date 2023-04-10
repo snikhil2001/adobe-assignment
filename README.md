@@ -36,4 +36,4 @@ It is an social media website in which user can create,like,unlike,delete and ed
 
 ## Pics of UI
 
-![Posts](frontend/src/Images/postpage.jpg)
+![Posts](./frontend/src/Images/postpage.jpg)
